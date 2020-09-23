@@ -1,38 +1,41 @@
-.App {
+.Container {
+  max-width: 400px;
+  min-height: 450px;
+  margin: 0 auto;
+  background-color: #efefef;
+  box-shadow: 0 0 10px gray;
+  margin-top: 30px;
+  padding: 15px 50px;
+}
+
+.Text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Expense-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  background-color: #fff;
+  box-shadow: 0 0 5px gray;
 }
 
-.App-link {
-  color: #61dafb;
+.Transaction-list {
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Transaction-list>li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 0 4px gray;
+  margin: 10px 0;
+border-radius: 10px;
+}
+
+.Transation-form input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px 5px;
 }
